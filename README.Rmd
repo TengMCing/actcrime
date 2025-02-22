@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# actcrime
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of `actcrime` is to provide an R interface to access ACT crime data.
+
+## Installation
+
+You can install the development version of actcrime from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("TengMCing/actcrime")
+```
+
+## Example
+
+```{r example}
+library(actcrime)
+# Load the package
+```
+
+The package includes a built-in dataset, `act_crime_stat_2024_09_30`, which contains cleaned and structured ACT crime statistics sourced from [dataACT](https://www.data.act.gov.au/Justice-Safety-and-Emergency/ACT-Crime-Statistics/2egm-dieb/about_data) as of **February 22, 2025**.
+
+```{r}
+act_crime_stat_2024_09_30 |> tibble::as_tibble()
+```
+
+Additionally, the package provides the function `get_act_crime_stat()`, which allows users to download the latest available crime statistics.
+
+```{r}
+get_act_crime_stat()
+``` 
+
+

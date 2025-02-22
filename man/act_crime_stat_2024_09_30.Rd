@@ -11,7 +11,7 @@ An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) w
 act_crime_stat_2024_09_30
 }
 \description{
-A tibble containing 101,308 rows and 8 columns including
+A dataset containing 101,308 rows and 8 columns including
 `district`, `suburb`, `crime_code`, `crime_type`, `year`, `quarter`,
 `month_range` and `count`.
 }
